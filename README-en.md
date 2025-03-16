@@ -1,5 +1,11 @@
 # tiny-rollup [![npm](https://img.shields.io/npm/v/tiny-rollup.svg)](https://npmjs.com/package/tiny-rollup)
 
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![bundle][bundle-src]][bundle-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
+[![License][license-src]][license-href]
+
 English | <a href="./README-zh_CN.md">简体中文</a>
 
 <img src="./assets/logo.webp" width="100%">
@@ -17,7 +23,7 @@ tiny-rollup is a lightweight and efficient JavaScript bundler designed for rapid
 ## Install
 
 ```bash
-pnpm i tiny-rolluptiny-rollup
+pnpm i tiny-rollup
 ```
 
 ## Usage
@@ -25,17 +31,32 @@ pnpm i tiny-rolluptiny-rollup
 ```ts
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { tiny-rollup } from 'tiny-rolluptiny-rollup
+import { tinyRollup } from 'tiny-rollup'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const entry = resolve(__dirname, './msg.js')
-tiny-rollup(entry, resolve(__dirname, '../bundle.js'))
+const entryTest1 = resolve(__dirname, './main.js')
+const outTest1 = resolve(__dirname, '../dist/bundle.js')
+
+tinyRollup(entryTest1, outTest1)
 ```
 
 See an [example](https://github.com/Sunny-117/tiny-rollup/blob/main/playground/src/index.js) for more details.
 
 ## License
 
-[MIT](./LICENSE) License © 2024 [Sunny-117](https://github.com/sunny-117)
+[MIT](./LICENSE) License © [Sunny-117](https://github.com/Sunny-117)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/tiny-rollup?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/tiny-rollup
+[npm-downloads-src]: https://img.shields.io/npm/dm/tiny-rollup?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-href]: https://npmjs.com/package/tiny-rollup
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/tiny-rollup?style=flat&colorA=080f12&colorB=1fa669&label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=tiny-rollup
+[license-src]: https://img.shields.io/github/license/Sunny-117/tiny-rollup.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/Sunny-117/tiny-rollup/blob/main/LICENSE
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
+[jsdocs-href]: https://www.jsdocs.io/package/tiny-rollup
