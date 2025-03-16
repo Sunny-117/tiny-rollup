@@ -2,7 +2,7 @@
 
 简体中文 | <a href="./README-en.md">English</a>
 
-<img src="./assets/logo.webp" width="300">
+<img src="./assets/logo.webp" width="100%">
 
 tiny-rollup 是一个轻量级且高效的 JavaScript 打包工具，专为现代 Web 应用的快速构建和打包而设计。通过简单而强大的工作流程，致力于提供最佳的性能和开发体验。
 

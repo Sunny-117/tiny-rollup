@@ -2,7 +2,7 @@
 
 English | <a href="./README-zh_CN.md">简体中文</a>
 
-<img src="./assets/logo.webp" width="300">
+<img src="./assets/logo.webp" width="100%">
 
 tiny-rollup is a lightweight and efficient JavaScript bundler designed for rapid construction and packaging of modern web applications. With its simple yet powerful workflow, tiny-rollup is dedicated to providing optimal performance and development experience.
 
