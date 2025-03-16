@@ -22,6 +22,7 @@ export interface ScopeOptions {
 
 export interface BundleOptions {
   entry: string
+  outputFileName?: string
 }
 
 export type StatementWithInclude = Statement & { _include?: boolean }

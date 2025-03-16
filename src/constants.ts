@@ -1,9 +1,9 @@
 export const DEFAULT_CONFIG_FILES = [
-  'cherry.config.js',
+  'tiny-rollup.config.js',
   // TODO
-  // 'cherry.config.mjs',
-  // 'cherry.config.ts',
-  // 'cherry.config.cjs',
-  // 'cherry.config.mts',
-  // 'cherry.config.cts',
+  // 'tiny-rollup.config.mjs',
+  // 'tiny-rollup.config.ts',
+  // 'tiny-rollup.config.cjs',
+  // 'tiny-rollup.config.mts',
+  // 'tiny-rollup.config.cts',
 ]

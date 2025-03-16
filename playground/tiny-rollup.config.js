@@ -1,4 +1,4 @@
-import { defineConfig } from '@sunny-117/cherry'
+import { defineConfig } from 'tiny-rollup'
 
 export default defineConfig({
   entry: './src/index.js',

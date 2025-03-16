@@ -7,10 +7,10 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "dev": "cd src && nodemon index.js",
-    "cherry": "cherry"
+    "build": "cd src && node index.js",
+    "tiny-rollup": "tiny-rollup"
   },
   "dependencies": {
-    "@sunny-117/cherry": "link:.."
+    "tiny-rollup": "link:.."
   }
 }

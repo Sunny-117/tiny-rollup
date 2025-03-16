@@ -3,14 +3,18 @@ import type { BundleOptions } from './type'
 import fs from 'node:fs'
 import path, { resolve } from 'node:path'
 import process from 'node:process'
+import consola from 'consola'
 import { Bundle as MagicStringBundle } from 'magic-string'
+import { ensureDirExists } from 'notools'
 import { Module } from './module'
 
 export class Bundle {
   entryPath: string
   module: any
   statements: Array<Statement | ModuleDeclaration> = []
+  options: BundleOptions
   constructor(options: BundleOptions = {} as BundleOptions) {
+    this.options = options
     this.entryPath = `${options.entry.replace(/.js$/, '')}.js`
     this.module = {}
   }
@@ -20,12 +24,18 @@ export class Bundle {
     if (entryModule) {
       this.statements = entryModule.expendAllStatements()
       const { code } = this.generate()
+      const { outputFileName } = this.options
       const outputDir = resolve(process.cwd(), 'dist')
-      if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true })
+      // if (!fs.existsSync(outputDir)) {
+      //   fs.mkdirSync(outputDir, { recursive: true })
+      // }
+      let fullPath = `${outputDir}/bundle.js`
+      if (outputFileName) {
+        fullPath = outputFileName
       }
-      const fullPath = `${outputDir}/bundle.js`
+      ensureDirExists(fullPath)
       fs.writeFileSync(fullPath, code, 'utf-8')
+      consola.success(`写入${fullPath}成功`)
     }
   }
 

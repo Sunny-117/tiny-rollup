@@ -1,11 +1,11 @@
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cherry } from '@sunny-117/cherry'
+import { tinyRollup } from 'tiny-rollup'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-debugger
 const entryTest1 = resolve(__dirname, './main.js')
-// const entryTest2 = resolve(__dirname, './test2/main.js')
-cherry(entryTest1, resolve(__dirname))
+const outTest1 = resolve(__dirname, '../dist/bundle.js')
+
+tinyRollup(entryTest1, outTest1)

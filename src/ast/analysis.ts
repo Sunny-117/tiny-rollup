@@ -4,6 +4,7 @@ import type { AstNode } from '../type'
 import fs from 'node:fs'
 import path, { dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import consola from 'consola'
 import { Scope } from './scope'
 import { walk } from './walk'
 
@@ -65,7 +66,7 @@ export function analysis(ast: Program, magicString: MagicString) {
       },
     })
   })
-  console.log('第一次遍历：', scope);
+  consola.info('第一次遍历：', scope);
   (ast as any)._scope = scope
   // 找到外部依赖 _dependsOn
   ast.body.forEach((statement) => {

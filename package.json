@@ -1,17 +1,17 @@
 {
-  "name": "@sunny-117/cherry",
+  "name": "tiny-rollup",
   "type": "module",
   "version": "0.0.3",
-  "packageManager": "pnpm@6.35.0",
+  "packageManager": "pnpm@10.6.2",
   "description": "Lightweight JavaScript Bundler",
   "license": "MIT",
-  "homepage": "https://github.com/Sunny-117/cherry#readme",
+  "homepage": "https://github.com/Sunny-117/tiny-rollup#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sunny-117/cherry.git"
+    "url": "git+https://github.com/Sunny-117/tiny-rollup.git"
   },
   "bugs": {
-    "url": "https://github.com/Sunny-117/cherry/issues"
+    "url": "https://github.com/Sunny-117/tiny-rollup/issues"
   },
   "exports": {
     ".": {
@@ -24,7 +24,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "cherry": "bin/cherry"
+    "tiny-rollup": "bin/tiny-rollup"
   },
   "files": [
     "dist"
@@ -45,7 +45,9 @@
     "acorn": "^8.8.0",
     "cac": "^6.7.12",
     "chokidar": "^3.5.3",
-    "magic-string": "^0.26.5"
+    "consola": "^3.4.0",
+    "magic-string": "^0.26.5",
+    "notools": "0.0.5-alpha.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.0.0",
