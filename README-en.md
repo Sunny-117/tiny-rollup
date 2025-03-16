@@ -9,23 +9,25 @@ English | <a href="./README-zh_CN.md">简体中文</a>
 
 <img src="./assets/logo.webp" width="100%">
 
-tiny-rollup is a lightweight and efficient JavaScript bundler designed for rapid construction and packaging of modern web applications. With its simple yet powerful workflow, tiny-rollup is dedicated to providing optimal performance and development experience.
+🌱 Featherlight Module Bundler | ⚡ Second-Level Build Speed | 🌳 Intelligent Tree-Shaking
 
-## Features
+## 🌟 Features
 
-📦️ Lightweight: tiny-rollup focuses on minimizing the size of the bundling tool, ensuring fast startup and loading times.
+- 🎯 **Zero-config Startup** - Lightweight, out-of-the-box bundling capabilities
+- 🌳 **Intelligent Tree-Shaking** - Automatically eliminates unused code
+- 📦 **ESM First** - Native support for ES Modules
+- 🗺 **Sourcemap Support** - Comprehensive debugging support
+- ⚡ **Lightning-fast Bundling**
 
-🔧 Simple Configuration: Provides concise and intuitive configuration options, allowing for easy customization and adjustment of the project's bundling process.
+## 🚀 Quick Start
 
-🔥 Tree-shaking: Automatically removes unused code through static analysis, reducing the size of the final bundled file.
-
-## Install
+### Installation
 
 ```bash
 pnpm i tiny-rollup
 ```
 
-## Usage
+### Build
 
 ```ts
 import { dirname, resolve } from 'node:path'
@@ -41,7 +43,7 @@ const outTest1 = resolve(__dirname, '../dist/bundle.js')
 tinyRollup(entryTest1, outTest1)
 ```
 
-See an [example](https://github.com/Sunny-117/tiny-rollup/blob/main/playground/src/index.js) for more details.
+Check out the [example](https://github.com/Sunny-117/tiny-rollup/blob/main/playground/src/index.js) for more details.
 
 ## License
 

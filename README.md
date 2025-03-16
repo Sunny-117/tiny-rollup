@@ -9,23 +9,25 @@
 
 <img src="./assets/logo.webp" width="100%">
 
-tiny-rollup 是一个轻量级且高效的 JavaScript 打包工具，专为现代 Web 应用的快速构建和打包而设计。通过简单而强大的工作流程，致力于提供最佳的性能和开发体验。
+🌱 轻如鸿毛的模块打包器 | ⚡ 秒级构建 | 🌳 智能Tree-Shaking
 
-## 特性
+## 🌟 特性
 
-📦️ 轻量级：tiny-rollup 注重最小化打包工具的体积，确保快速启动和加载时间。
+- 🎯 **零配置启动** - 轻量级、开箱即用的基础打包能力
+- 🌳 **智能 Tree-Shaking** - 自动消除未使用代码
+- 📦 **ESM 优先** - 原生支持 ES Modules
+- 🗺 **Sourcemap 支持** - 完善的调试支持
+- ⚡ **闪电打包**
 
-🔧 简单配置：提供简洁直观的配置选项，轻松自定义和调整项目的打包过程。
+## 🚀 快速入门
 
-🔥 tree-shaking：通过静态分析代码，自动移除未使用的代码，减小最终打包文件的大小。
-
-## 安装
+### 安装
 
 ```bash
 pnpm i tiny-rollup
 ```
 
-## 使用
+### 构建
 
 ```ts
 import { dirname, resolve } from 'node:path'
