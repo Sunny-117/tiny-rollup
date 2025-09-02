@@ -2,7 +2,7 @@
   "name": "tiny-rollup",
   "type": "module",
   "version": "0.0.4",
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.15.1",
   "description": "Lightweight JavaScript Bundler",
   "license": "MIT",
   "homepage": "https://github.com/Sunny-117/tiny-rollup#readme",
