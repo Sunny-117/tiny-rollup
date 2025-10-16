@@ -11,6 +11,6 @@
     "tiny-rollup": "tiny-rollup"
   },
   "dependencies": {
-    "tiny-rollup": "link:.."
+    "tiny-rollup": "workspace:*"
   }
 }
