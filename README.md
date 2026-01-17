@@ -7,9 +7,9 @@
 
 简体中文 | <a href="./README-en.md">English</a>
 
-<img src="./assets/logo.webp" width="100%">
+<img src="./assets/logo.png" width="100%">
 
-🌱 轻如鸿毛的模块打包器 | ⚡ 秒级构建 | 🌳 智能Tree-Shaking
+🌱 轻量模块打包器 | ⚡ 秒级构建 | 🌳 智能Tree-Shaking
 
 ## 🌟 特性
 

@@ -7,7 +7,7 @@
 
 English | <a href="./README-zh_CN.md">简体中文</a>
 
-<img src="./assets/logo.webp" width="100%">
+<img src="./assets/logo.png" width="100%">
 
 🌱 Featherlight Module Bundler | ⚡ Second-Level Build Speed | 🌳 Intelligent Tree-Shaking
 
