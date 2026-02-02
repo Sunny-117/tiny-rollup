@@ -1,16 +1,26 @@
 {
   "name": "playground",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "main": "index.js",
   "scripts": {
-    "build": "cd src && node index.js",
-    "tiny-rollup": "tiny-rollup"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "tiny-rollup": "workspace:*"
+    "abtest-kit": "workspace:*",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.1.0",
+    "globals": "^16.4.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
   }
 }
